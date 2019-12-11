@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Loader(Balls)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src=""></script>-->
+</head>
+<style>
+    .container{
+        height : 100vh;
+        width: 100%;
+        position: fixed;
+    }
+    .strip{
+        top : 50%;
+        position: absolute;
+        transform: translateY(-50%);
+        height: 25px;
+        width: 10px;
+        background-color: #fff;
+        animation-name: bubble;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.1,.53,.03,.97);
+        border: 2px solid gray;
+    }
+    #b1{    
+        left : 42%;
+        animation-delay: 100ms;
+    }
+    #b2{
+        left : 44%;
+        animation-delay: 200ms;
+    }
+    #b3{
+        left : 46%;
+        animation-delay: 300ms;
+    }
+    #b4{
+        left : 48%;
+        animation-delay: 400ms;
+    }   
+    #b5{
+        left : 50%;
+        animation-delay: 500ms;
+    }
+    #b6{
+        left : 52%;
+        animation-delay: 600ms;
+    }
+    #b7{
+        left : 54%;
+        animation-delay: 700ms;
+    }
+    #b8{
+        left : 56%;
+        animation-delay: 800ms;
+    }
+    @keyframes bubble{
+        0%{ opacity: 1;
+            height: 40px;
+        }
+        100%{
+            opacity: 1;
+            height: 25px;
+        }
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="b1" class="strip">
+        </div>
+        <div id="b2" class="strip">
+        </div>
+        <div id="b3" class="strip">
+        </div>
+        <div id="b4" class="strip">
+        </div>
+        <div id="b5" class="strip">
+        </div>
+        <div id="b6" class="strip">
+        </div>
+        <div id="b7" class="strip">
+        </div>
+    </div>
+</body>
+</html>
